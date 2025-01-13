@@ -57,13 +57,6 @@ function getAverage(value1, value2) {
   return (value1 + value2) / 2;
 }
 
-// function getAverage(value1, value2) {
-//   if (!Number.isFinite(value1) || !Number.isFinite(value2)) {
-//     return NaN;
-//   }
-//   return (value1 + value2) / 2;
-// }
-
 /**
  * Returns a distance between two points by cartesian coordinates.
  *
@@ -446,15 +439,6 @@ function isNumber(value) {
   return typeof value === 'number' && Number.isFinite(value);
 }
 
-// function isNumber(value) {
-//   return (
-//     typeof value === 'number' &&
-//     !Number.isNaN(value) &&
-//     value !== Number.NEGATIVE_INFINITY &&
-//     value !== Number.POSITIVE_INFINITY
-//   );
-// }
-
 /**
  * Returns a boolean value indicating whether a number is an integer or not.
  *
@@ -561,15 +545,6 @@ function roundToNearestInteger(number) {
   return Math.round(number);
 }
 
-// function roundToNearestInteger(number) {
-// if (number == 0) return number;
-//   if (number - Math.trunc(number) >= 5) {
-//     return Math.trunc(number) + 1;
-//   } else {
-//     return Math.trunc(number);
-//   }
-// }
-
 /**
  * Returns the integer part of a number by removing any fractional digits.
  *
@@ -665,16 +640,6 @@ function getCountOfOddNumbers(number) {
   const posnumber = Math.abs(number);
   return Math.floor((posnumber + 1) / 2);
 }
-
-// return Math.ceil(number / 2);
-
-// function getCountOfOddNumbers(number) {
-//   let count = 0;
-//   for (let i = 1; i <= number; i += 2) {
-//     count++;
-//   }
-//   return count;
-// }
 
 module.exports = {
   getRectangleArea,
